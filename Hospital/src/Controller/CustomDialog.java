@@ -86,20 +86,5 @@ public class CustomDialog extends JDialog {
     public void CustomDialog(Fila atendimento2, Entrada entrada2, InfoPacientes info2) {
 		// TODO Auto-generated constructor stub
 	}
-
-	public static void main(String[] args) {
-        Entrada entrada = new Entrada();
-        InfoPacientes info = new InfoPacientes();
-        Fila atendimento = new Fila();
-
-        List<Paciente> pacientes = entrada.receberInformacoes();
-
-        for (Paciente paciente : pacientes) {
-            atendimento.adicionarPaciente(paciente);
-        }
-
-        // Criar a janela personalizada
-        CustomDialog customDialog = new CustomDialog(atendimento, entrada, info);
-        customDialog.setVisible(true);
-    }
 }
+
